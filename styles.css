@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    font-family: 'Outfit' , sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background-color: #d63b07;
+    background: linear-gradient(to right,#76220f,#fd4002);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+.container{
+    background-image:
+    linear-gradient(to right,#76220f41 30%,#fd41026d),
+    url(Images/Hero\ Background.png);
+    width: 90%;
+    height: 640px;
+    transition: 0.5s;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.container:hover{
+    background-image:
+    linear-gradient(to right,#76220f41 30%,transparent),
+    url(Images/Hero\ Background.png);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 10px;
+}
+.logo{
+   font-size: 25px;
+   text-transform: uppercase;
+}
+ul{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul li a{
+    border-bottom: 2px solid transparent;
+}
+ul li a:hover{
+    border-bottom: 2px solid white; 
+}
+.content{
+    color: white;
+    width: 50%;
+    margin-top: 160px ;
+    padding: 30px;
+}
+.content h2{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.content p{
+    letter-spacing: 1px;
+    margin-top: 20px;
+
+}
+.content button{
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 6px 10px;
+    border-radius: 12px;
+    border: none;
+}
+.content button:hover{
+   background-color: #d63b07;
+   color: white;
+}
